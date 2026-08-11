@@ -179,7 +179,7 @@
 
             <!-- Subtitle -->
             <p class="text-lg sm:text-xl text-gray-400 max-w-3xl font-normal leading-relaxed mb-10">
-                Crafting immersive spatial web experiences, autonomous multi-agent pipelines, Android games & tools, and high-performance Solana decentralization.
+                Crafting immersive spatial web experiences, global intelligence dashboards, Android games & utilities, and high-performance Solana decentralization.
             </p>
 
             <!-- Action Buttons -->
@@ -222,7 +222,36 @@
                 <h3 class="text-3xl sm:text-4xl font-bold text-white">Live Open Source Releases</h3>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- World Monitor Card -->
+                <div class="glass-card p-8 rounded-3xl border border-blue-500/30 relative overflow-hidden group flex flex-col justify-between">
+                    <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none"></div>
+
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-950/80 border border-blue-700/50 text-blue-300 font-mono text-xs mb-4">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <span>REALTIME OSINT & INTEL</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">World Monitor</h4>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Real-time global geopolitical & infrastructure intelligence dashboard featuring AI-powered event tagging, subsea cable tracking, and custom alerts.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-8 font-mono text-xs">
+                            <span class="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-cyan-300">TypeScript</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-purple-300">Cloudflare Workers</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-emerald-300">Tauri App</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/l2bote4game/world-monitor" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm inline-flex items-center gap-2 transition-colors">
+                            <i class="fa-brands fa-github text-base"></i>
+                            <span>View Source Code</span>
+                        </a>
+                    </div>
+                </div>
 
                 <!-- Wi-Fi Analyzer Card -->
                 <div class="glass-card p-8 rounded-3xl border border-cyan-500/30 relative overflow-hidden group flex flex-col justify-between">
@@ -231,7 +260,7 @@
                     <div>
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-700/50 text-cyan-300 font-mono text-xs mb-4">
                             <i class="fa-solid fa-wifi"></i>
-                            <span>ANDROID APP • ANTIGRAVITY CO-BUILT</span>
+                            <span>ANDROID APP • ANTIGRAVITY</span>
                         </div>
                         <h4 class="text-2xl font-bold text-white mb-3">WiFi Analyzer & Network Scanner</h4>
                         <p class="text-gray-300 text-sm leading-relaxed mb-6">
@@ -426,7 +455,7 @@
                 <!-- Terminal Input Form -->
                 <form id="terminal-form" class="bg-black/80 px-6 py-3 border-t border-white/5 flex items-center gap-3">
                     <span class="text-cyan-400 font-bold">visitor@bavovna:~$</span>
-                    <input type="text" id="terminal-input" autocomplete="off" placeholder="type command (e.g. help, whoami, cats, wifi, 3d, contact)..." class="bg-transparent border-none outline-none text-white w-full font-mono focus:ring-0">
+                    <input type="text" id="terminal-input" autocomplete="off" placeholder="type command (e.g. help, whoami, world, cats, wifi, 3d, contact)..." class="bg-transparent border-none outline-none text-white w-full font-mono focus:ring-0">
                     <button type="submit" class="text-xs px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded border border-cyan-500/40 hover:bg-cyan-500/40">EXEC</button>
                 </form>
             </div>
@@ -435,9 +464,9 @@
             <div class="flex flex-wrap items-center justify-center gap-3 mt-4">
                 <span class="text-xs font-mono text-gray-500">Quick triggers:</span>
                 <button onclick="runCommand('whoami')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-cyan-400 hover:text-cyan-400">whoami</button>
+                <button onclick="runCommand('world')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-blue-400 hover:text-blue-400">world-monitor</button>
                 <button onclick="runCommand('cats')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-purple-400 hover:text-purple-400">cats-game</button>
                 <button onclick="runCommand('wifi')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-cyan-400 hover:text-cyan-400">wifi-app</button>
-                <button onclick="runCommand('stack')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-cyan-400 hover:text-cyan-400">stack</button>
                 <button onclick="runCommand('3d')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-purple-400 hover:text-purple-400">3d mode</button>
                 <button onclick="runCommand('clear')" class="px-3 py-1 rounded bg-white/5 border border-white/10 text-xs font-mono text-gray-300 hover:border-red-400 hover:text-red-400">clear</button>
             </div>
@@ -617,6 +646,7 @@
                 case 'help':
                     appendLine(`Available commands:<br>
                     <span class="text-yellow-400">whoami</span>   - About Bavovna Studio & Architect<br>
+                    <span class="text-yellow-400">world</span>    - World Monitor real-time intel app<br>
                     <span class="text-yellow-400">cats</span>     - Cats Match-3 game source link<br>
                     <span class="text-yellow-400">wifi</span>     - WiFi Scanner Android app details<br>
                     <span class="text-yellow-400">stack</span>    - Tech matrix & tools<br>
@@ -626,8 +656,13 @@
                     break;
                 case 'whoami':
                     appendLine(`[SYSTEM INFO] Bavovna Studio / Archicat Labs<br>
-                    Focus: Autonomous AI Agents, WebGL 3D, Solana Decentralization, Android Apps.<br>
+                    Focus: Autonomous AI Agents, Realtime Intel, WebGL 3D, Solana Decentralization, Android Apps.<br>
                     Status: Online & Realtime.`);
+                    break;
+                case 'world':
+                    appendLine(`<span class="text-blue-400">[WORLD MONITOR]</span><br>
+                    GitHub: <a href="https://github.com/l2bote4game/world-monitor" target="_blank" class="underline text-blue-400">l2bote4game/world-monitor</a><br>
+                    Features: Real-time global intelligence dashboard, AI event tagging, Cloudflare Workers backend.`);
                     break;
                 case 'cats':
                     appendLine(`<span class="text-purple-400">[CATS MATCH-3 GAME]</span><br>
@@ -642,7 +677,7 @@
                 case 'stack':
                     appendLine(`<span class="text-cyan-400">[3D & FULLSTACK MATRIX]</span><br>
                     • 3D & Graphics: Three.js, WebGL, GLSL Shaders, Canvas<br>
-                    • Mobile: Kotlin, Jetpack Compose, Coroutines, Android Studio<br>
+                    • Mobile & Desktop: Kotlin, Jetpack Compose, Tauri, TypeScript<br>
                     • AI Ecosystem: Multi-agent frameworks, Python, LLM APIs<br>
                     • Web3: Solana, Anchor, Rust, Web3.js`);
                     break;
